@@ -21,7 +21,7 @@ import tripPricer.Provider;
 
 public class TestTourGuideService {
 
-	@Test
+	/*@Test
 	public void getUserLocation() {
 		GpsUtil gpsUtil = new GpsUtil();
 		RewardsService rewardsService = new RewardsService(gpsUtil, new RewardCentral());
@@ -123,7 +123,7 @@ public class TestTourGuideService {
 		tourGuideService.tracker.stopTracking();
 		
 		assertEquals(10, providers.size());
-	}
+	}*/
 	
 	
 }
