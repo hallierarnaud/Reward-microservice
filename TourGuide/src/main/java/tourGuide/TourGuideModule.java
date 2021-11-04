@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import rewardCentral.RewardCentral;
-import tourGuide.service.RewardsService;
+import tourGuide.rewards.service.RewardsService;
 
 @Configuration
 public class TourGuideModule {
