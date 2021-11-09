@@ -13,7 +13,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import rewardCentral.RewardCentral;
-import tourGuide.helper.InternalTestHelper;
 
 public class TestPerformance {
 	
