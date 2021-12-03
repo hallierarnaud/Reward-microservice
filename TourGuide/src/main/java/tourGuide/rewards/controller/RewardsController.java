@@ -15,6 +15,12 @@ public class RewardsController {
   @Autowired
   private RewardsService rewardsService;
 
+  /**
+   *
+   * @param attractionId an id of an attraction
+   * @param userId an id of a user
+   * @return the number of reward points attributed by the attraction's visit
+   */
   @GetMapping("/rewards")
   public int getRewards(@RequestParam UUID attractionId, @RequestParam UUID userId) {
     return rewardsService.getRewardPoints(attractionId, userId);
