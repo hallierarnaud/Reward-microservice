@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
+import lombok.extern.slf4j.Slf4j;
 import tourGuide.rewards.service.RewardsService;
 
+@Slf4j
 @RestController
 public class RewardsController {
 
@@ -23,6 +25,7 @@ public class RewardsController {
    */
   @GetMapping("/rewards")
   public int getRewards(@RequestParam UUID attractionId, @RequestParam UUID userId) {
+    log.info("call rewards");
     return rewardsService.getRewardPoints(attractionId, userId);
   }
 
